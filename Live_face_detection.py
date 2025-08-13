@@ -3,7 +3,7 @@ import numpy as np
 import tensorflow as tf
 
 # Load pre-trained emotion detection model
-model = tf.keras.models.load_model('D:/A-Compact-Embedding-for-Facial-Expression-Similarity-main/model (1).h5')  # مسیر مدل خود را وارد کنید
+model = tf.keras.models.load_model('D:/A-Compact-Embedding-for-Facial-Expression-Similarity-main/model (1).h5') 
 
 # Emotion labels (7 emotions corresponding to the model)
 emotion_labels = ['angry', 'disgust', 'fear', 'happy', 'neutral', 'sad', 'surprise']
@@ -64,3 +64,4 @@ while True:
 # Release the webcam and close all OpenCV windows
 cap.release()
 cv2.destroyAllWindows()
+
